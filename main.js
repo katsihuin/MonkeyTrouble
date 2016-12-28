@@ -1,4 +1,4 @@
-
+// Codigo para consultar si estas en problemas o no 
 function monkeyA()
 {
     var img = document.getElementById("img_mono_b");
@@ -25,17 +25,28 @@ function monkeyB()
 }
 function consultar()
 {
-    var monkeyA = document.getElementById("monkeyA").checked;
-    var monkeyB = document.getElementById("monkeyB".checked);
     var aSmile = document.getElementById("si").checked;
     var bSmile = document.getElementById("no").checked;
     var salida = document.getElementById("salida");
 
-    if ((aSmile == bSmile) && (monkeyA == monkeyB))
-        //problemas
+    if (aSmile && bSmile) {
+//Estas en problemas
+        salida.innerHTML = "Si";
+}
+if (!aSmile && !bSmile) {
+//Estas en problemas
+        salida.innerHTML = "Si";
+}
+else {
+
+       //NO hay problema
+       salida.innerHTML = "No";
+}
+    /*if (aSmile == bSmile)
+        //Estas en problemas
         salida.innerHTML = "1";
     else 
        //NO hay problema
-       salida.innerHTML = "0";
+       salida.innerHTML = "0";*/
 }
 
