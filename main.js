@@ -30,23 +30,16 @@ function consultar()
     var salida = document.getElementById("salida");
 
     if (aSmile && bSmile) {
-//Estas en problemas
-        salida.innerHTML = "Si";
-}
-if (!aSmile && !bSmile) {
-//Estas en problemas
-        salida.innerHTML = "Si";
-}
-else {
-
-       //NO hay problema
-       salida.innerHTML = "No";
-}
-    /*if (aSmile == bSmile)
         //Estas en problemas
-        salida.innerHTML = "1";
-    else 
-       //NO hay problema
-       salida.innerHTML = "0";*/
+        salida.innerHTML = "Si";
+}
+    if (!aSmile && !bSmile) {
+        //Estas en problemas
+            salida.innerHTML = "Si";
+    }
+    else {
+       //No estas en problemas
+       salida.innerHTML = "No";
+    }
 }
 

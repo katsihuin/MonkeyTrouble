@@ -15,7 +15,7 @@
 
 ##Proceso
 
-- - Si bSmile es igual a aSmile entonces estamos en problemas, si no 
+- - Si bSmile es igual a aSmile entonces estamos en problemas, sino no estamos en problemas
 
 ## Mostrar Resultados
 
