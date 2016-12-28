@@ -7,8 +7,8 @@
  	  	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
  	</head>
  	 <body>
- 		<!--Here Starts Form-->
- 		<section class="contact section-fullscreen flex-vertical-center">	
+ 		<!--Aqui empieza formulario ¡-->
+ 		<section class="formulario">	
 			<div class="container">
 				<br>
 				<div class="form section-md">
@@ -17,46 +17,51 @@
 						<p class="">Completa el formulario para saber si estas en problemas</p>
 					</div><br><br>
 					<form action="" class="" name="formulario" method="get">
-						<div class="form-group">
-							<label for="day" class="control-label col-md-offset-1 col-md-3">Monos</label>
-							<div class="col-md-5">
-								
+
+		<!--Aqui empieza opciones de monos -->			
+						<div class="form-group text-center">
+							<label for="day" class="control-label">Escoge uno o ambos monos</label>
+							<div class="">
 								  <input type="checkbox" name="monkeyA" id=monkeyA> MonkeyA
 								  <div id="img_mono_a"></div>
 								  <input type="checkbox" name="monkeyB" id=monkeyB> MonkeyB
 								  <div id="img_mono_b"></div>
 								  <br><br>
-								
 							</div>	
-						</div>
-						<div class="form-group">
-							<label class="control-label col-md-offset-1 col-md-3" for="vacation">¿Esta Sonriendo?</label>
-							<div class="col-md-5">
-								
+
+		<!--Aqui empieza opciones de sonreir -->					
+						<div class="text-center">
+							<label class="control-label">¿Esta Sonriendo?</label>
+							<div class="">
 								    <input type="checkbox" name="smile" id=si> Si
 								    <div id="monkeyHappy"></div>
 								  	<input type="checkbox" name="smile" id=no> No
 								  	<div id="monkeySad"></div>
-								  <br><br>
-								
+								  <br><br>	
 							</div>
 						</div>
+
+		<!--Aqui empieza botón -->					
 						<div class="form-group">
-							<div class="col-md-offset-4 col-md-4">
+							<div class="text-center">
 								<button type="submit" onclick="consultar()">Consultar</button>
 							</div>
-						</div>	
-						<div class="col-md-offset-4 col-md-4">
+						</div>
+
+		<!--Aqui empieza resultado -->							
+						<div class="text-center">
 							<h4 class="text-info">Resultado:</h4>
 							<div id="salida" style="font-size:50px;">-</div>
-							
+						</div>
+		<!--Link del ejercicio en github -->					
+						<div class="text-center">
+							<a href="" class="unstyled">link del ejercicio en github</a>
 						</div>				
 					</form>
-				
 				</div>
 			</div>		
 		</section>
-
+		<!--Aqui termina formulario -->				
 		<script type="text/javascript" src="main.js"></script>
   	</body>
 </html>
