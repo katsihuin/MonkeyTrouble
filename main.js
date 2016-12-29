@@ -1,45 +1,24 @@
 // Codigo para consultar si estas en problemas o no 
-function monkeyA()
-{
-    var img = document.getElementById("img_mono_b");
-    var monkeyA = document.getElementById("monkeyA");
-
-    if(monkeyA.checked){
-        img.innerHTML = '<img src="img/monkeyHappy.jpg">';
-    }
-    else{
-        img.innerHTML = '<img src="img/monkeySad.jpg">';
-    }
-}
-function monkeyB()
-{
-    var img = document.getElementById("img_mono_a");
-    var monkeyB = document.getElementById("monkeyB");
-
-    if(monkeyB.checked)
-    {
-        img.innerHTML = '<img src="img/monkeyHappy.jpg">';
-    }else{
-        img.innerHTML = '<img src="img/monkeySad.jpg">';
-    }
-}
 function consultar()
 {
-    var aSmile = document.getElementById("si").checked;
-    var bSmile = document.getElementById("no").checked;
+    var monkeyA = document.getElementById("monkeyA");
+    var monkeyB = document.getElementById("monkeyB");
+    var aSmile = document.getElementById("si");
+    var bSmile = document.getElementById("no");
     var salida = document.getElementById("salida");
 
-    if (aSmile && bSmile) {
+    if (monkeyA.checked && monkeyB.checked && aSmile.checked){
         //Estas en problemas
         salida.innerHTML = "Si";
-}
-    if (!aSmile && !bSmile) {
+    } 
+    else if (monkeyA.checked && monkeyB.checked && bSmile.checked){
         //Estas en problemas
-            salida.innerHTML = "Si";
-    }
+        salida.innerHTML = "Si";
+    } 
     else {
        //No estas en problemas
        salida.innerHTML = "No";
     }
 }
+
 
